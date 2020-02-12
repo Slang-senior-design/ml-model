@@ -1,0 +1,47 @@
+Why
+back camera record gesture and translate
+text/voice english to gesture on own and target phone
+dictionary for people to use as a reference for learning sign language
+
+why over text? illiterate, different dialects of sign language
+
+We [hearers] learn to speak and write through the sound we hear and the phonetics and from there we learn to read but deaf people can’t hear so they struggle to learn. There are very few deaf people who are bilingual and can talk in both libras (Brazilian sign language) and Portuguese.
+
+Difficultly in communication 
+
+------------------------------
+images/video considerations
+lighting conditions
+orientation of subject
+background with a lot of noise
+object detection for standard capture size
+
+------------------------------
+image data
+RGB + alpha channel
+black/white
+range of grayscale is 0-127
+
+channel = grayscale value
+
+vgg16 takes (224 * 224 * 3)
+resizing: skimage.transform, keras.preprocessing.image import load_img, x_data.reshape
+
+OpenCV stores images in BGR order instead of RGB => cv2.cvtColor(image, cv2.COLOR_BGR2RGB)
+
+------------------------------
+Linear Regression Problem:
+The outcome given the features might have a non-Gaussian distribution
+
+------------------------------
+TODO:
+
+------------------------------
+Reference Projects
+- CopyCat interactive American Sign Language game
+- ‘‘THETOS’’ (Text into Sign Language Automatic Translator)
+- Sign2 Conversion System was designed to convert ASL to written and spoken English
+- Hidden Markov Models: statistical approach to speech and handwriting recognition
+- Markov Chain: only one example necessary
+- Vcom3D: sign language animations
+- Lexicalized Tree Adjoining Grammar-based system for the NLP step
